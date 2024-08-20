@@ -1,5 +1,5 @@
 from PyQt6.QtCore import Qt, pyqtSlot, QObject
-from PyQt6.QtWidgets import QDialog, QButtonGroup, QScrollArea, QWidget, QVBoxLayout, QDialogButtonBox, QSizePolicy, QRadioButton, QLineEdit
+from PyQt6.QtWidgets import QDialog, QButtonGroup, QScrollArea, QWidget, QVBoxLayout, QDialogButtonBox, QSizePolicy, QRadioButton
 from PyQt6.QtWebEngineCore import QWebEngineWebAuthUxRequest
 from PyQt6.uic import loadUiType
 from . import ui
@@ -129,7 +129,6 @@ class WebAuthUXDialog(baseClass):
                 self.ui.m_description.setText(_tr("Change PIN for your security key"))
             self.ui.m_confirmPinLabel.setVisible(True)
             self.ui.m_confirmPinLineEdit.setVisible(True)
-            self.ui.m_confirmPinLineEdit.setEchoMode(QLineEdit.Password)
 
         errorDetails = ""
         if pinRequestInfo.error == QWebEngineWebAuthUxRequest.PinEntryError.InternalUvLocked:
