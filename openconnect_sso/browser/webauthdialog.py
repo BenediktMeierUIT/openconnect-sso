@@ -1,5 +1,5 @@
 from PyQt6.QtCore import Qt, pyqtSlot, QObject
-from PyQt6.QtWidgets import QDialog, QButtonGroup, QScrollArea, QWidget, QVBoxLayout, QDialogButtonBox, QSizePolicy, QRadioButton
+from PyQt6.QtWidgets import QDialog, QButtonGroup, QScrollArea, QWidget, QVBoxLayout, QDialogButtonBox, QSizePolicy, QRadioButton, QLineEdit
 from PyQt6.QtWebEngineCore import QWebEngineWebAuthUxRequest
 from PyQt6.uic import loadUiType
 from . import ui
